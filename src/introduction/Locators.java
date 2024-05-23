@@ -31,7 +31,7 @@ public class Locators {
 		driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("john2@gmail.com");
 		driver.findElement(By.xpath("//input[contains(@placeholder,'Phone Number')]")).sendKeys("123456789");
 		driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
-		System.err.println(driver.findElement(By.cssSelector(".infoMsg")).getText());
+		System.out.println(driver.findElement(By.cssSelector(".infoMsg")).getText());
 		driver.findElement(By.cssSelector(".go-to-login-btn")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.cssSelector("#inputUsername")).sendKeys("wisan");
