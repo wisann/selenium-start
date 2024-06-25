@@ -3,13 +3,11 @@ package ecommerce;
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 
 public class Ecommerce {
 	public static void main(String[] args) {
@@ -17,7 +15,7 @@ public class Ecommerce {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-		String[] itemsNeeded = { "Cucumber", "Brocolli", "Beetroot"};
+		String[] itemsNeeded = { "Cucumber", "Brocolli", "Beetroot" };
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
 		addItems(driver, itemsNeeded);
 		driver.findElement(By.cssSelector("img[alt='Cart']")).click();
