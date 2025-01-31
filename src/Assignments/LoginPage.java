@@ -39,6 +39,7 @@ public class LoginPage {
 		driver.findElement(By.xpath("//input[@wfd-id='id4']")).click();
 		driver.findElement(By.cssSelector("input[id='signInBtn']")).click();
 		
+	
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("Checkout")));
 
 		List <WebElement> products = driver.findElements(By.cssSelector(".card-footer .btn-info"));
